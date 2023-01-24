@@ -1,0 +1,13 @@
+﻿body{
+    background-color:rgb(199, 222, 243);
+    text-align: center;
+}
+body table{
+    margin: auto;
+}
+body table input{
+  
+    height: 40px;
+    text-align: center;
+   
+}

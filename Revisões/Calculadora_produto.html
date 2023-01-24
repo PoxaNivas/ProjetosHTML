@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="_estiloc.css">
+    <title>Calculadora de produtos</title>
+    <script type="text/javascript">
+            function validarDescricao(){
+                if(q_radio.value.trim()===""){
+                    q_radio.style.background="red"
+                    q_radio.placeholder= ("Você não preencheu o campo quantidade")
+                }
+                else{
+                    q_radio.style.background="white"
+                }
+            }
+
+            function calcular() {
+                var res = parseFloat(valor_tv.value) * parseInt(q_tv.value);
+                resultado_tv.value= res.toFixed(6);
+
+            }
+    
+
+    </script>
+</head>
+
+<body>
+    <h1>Calculadora de produtos</h1>
+    <table border="2" cellspacing="2px" cellpadding="2px">
+        <tr>
+            <td>Produto</td>
+            <td>Valor</td>
+            <td>Quantidade</td>
+            <td>Resultado</td>
+        </tr>
+        <tr>
+            <td>Televisão</td>
+            <td><input type="text" id="valor_tv" placeholder="Digite o valor"></td>
+            <td><input type="text" id="q_tv" placeholder="Digite a quantidade"> </td>
+            <td><input type="text" id="resultado_tv" value="" readonly></td>
+        </tr>
+        <tr>
+            <td>Rádio</td>
+            <td><input type="text" id="valor_radio" value="" placeholder="Digite o valor"></td>
+            <td><input type="text" id="q_radio" value="" placeholder="Digite a quantidade"></td>
+            <td><input type="text" id="resultado_radio" value=""readonly></td>
+        </tr>
+    </table>
+    <input type="button" id="Calcular" value="Calcular" onclick="javascript:calcular()">
+    <input type="button" id="Validar" value="Validar" onclick="javascript:validarDescricao()">
+
+</body>
+
+</html>

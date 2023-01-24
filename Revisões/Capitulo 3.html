@@ -1,0 +1,33 @@
+﻿<!--Página sobre funções, containers-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="_estilo.css">
+</head>
+<body>
+    <script type="text/javascript">
+        function iniciar(){
+            var nome=prompt(" Qual o seu nome?");
+            window.alert("Você disse que o seu nome é "+nome)
+        }
+        function mudança(){
+            var nome=prompt("Qual o seu nome? ")
+            resultado.innerHTML="Olá "+nome;
+            /* note que ao selecionar apenas "Olá", sem a virgula, ela não permanecerá no resultado final*/
+        
+        }
+    </script>
+    <input type="button" value="Clique para começar a função com alert/prompt" onclick="javascript:iniciar()">
+    
+    
+    
+    
+    <input type="button" value="Inicia a função innerHTML" onclick="javascript:mudança()">
+    <div id="resultado">Olá, </div>
+</body>
+
+
+</html>

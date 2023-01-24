@@ -1,0 +1,171 @@
+/*
+Formato: fina e criativa
+font-family: 'Amatic SC', cursive;
+font-family: 'Stick No Bills', sans-serif;
+
+Formato: fina e formal
+font-family: 'Josefin Sans', sans-serif;
+
+Formato: Grossa e formal
+font-family: 'Playfair Display', serif;
+font-family: 'Mali', cursive;
+
+Formato: Grossa e criativa
+font-family: 'Monofett', cursive;
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Sans:wght@100&family=Mali&family=Monofett&family=Playfair+Display&family=Stick+No+Bills:wght@200&display=swap');
+h1, h2, h3 
+{
+    font-family: 'Stick No Bills', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+   
+h4, h5, h6
+{
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Stick No Bills', sans-serif;
+}   
+
+h1
+{font-size: 70px;}
+
+h2
+{font-size: 50px;}
+
+h4
+{
+    font-size: 30px;
+    margin-bottom: 80px;
+    padding: 20px 0 ;
+}
+
+p, li, a 
+{
+    font-family: 'Mali', cursive;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*--------------------------------*/
+/*--------Elementos do HEAD-------*/
+/*--------------------------------*/
+
+header div.chamada h1
+{
+    text-shadow: 3px 4px 22px white ;
+    animation-name: HeaderH1-moverParaDireita;
+    animation-duration: 5s;
+}
+
+header div.chamada a
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px 60px;
+    border-radius: 50px;
+    background: linear-gradient(#8C728C 0%,#580259 80%);
+    font-weight: 900;
+    display:inline-block;
+    animation-name:HeaderA-moverParaCima ;
+    animation-duration: 5s;
+    
+}
+header div.chamada h4{
+    animation-name:HeaderH4-moverParaEsquerda;
+    animation-duration: 5s;
+}
+
+/*--------------------------------*/
+/*------Seção - Sobre nós---------*/
+/*--------------------------------*/
+
+body section p.destaque {
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    width: 50%;
+}
+
+body section div.pontos-chaves h4{
+ 
+    font-weight: 300;
+    color: #caaef7;
+    text-shadow: none;
+    margin-bottom: 0px;
+}
+
+body section div.pontos-chaves h4:after
+{
+    display:block;
+    background-color: white;
+    height: 1px;
+    width: 30%;
+    margin: 20px auto 10px;
+    content: "   ";
+}
+
+body section div img#Icons1, img#Icons2, img#Icons3
+{
+    width: 50px;
+    height: 50px;
+    margin-left: 40%;
+}
+
+
+/*--------------------------------*/
+/*          Seção - Planos   */
+/*--------------------------------*/
+
+section#Plano-principal div#Planos-janela div.Planos div.planos-top h4{
+    padding-top: 50px;
+    margin-bottom: 20px;
+    line-height: 0px;
+    padding-top: 50px;
+    color:#260120;
+    text-shadow: none;
+    font-weight: 900;
+
+}
+body section#Plano-principal h4:after
+{
+    display:block;
+    background-color: white;
+    height: 1px;
+    width: 40%;
+    margin: 20px auto 10px;
+    content: "   ";
+}
+
+section#Plano-principal div#Planos-janela div.Planos div.planos-top ul li
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 25px;
+}
+
+section#Plano-principal div#Planos-janela div.Planos div.planos-bottom 
+{
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+/*--------------------------------*/
+/*          Seção - Footer        */
+/*--------------------------------*/
+body footer div#infos li
+{
+    list-style: none;
+    margin-bottom: 15px;
+}

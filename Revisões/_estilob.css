@@ -1,0 +1,22 @@
+﻿h1{
+    text-align: center;
+}
+body{
+    background-color: rgb(201, 38, 38);
+}
+
+
+body #Calculadora{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+body #Calculadora .numeros input{
+    height: 100px;
+    margin: 10px;
+}
+
+body #Calculadora .funcoes input{
+    margin: 10px;
+}

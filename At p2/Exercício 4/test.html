@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='test.js'></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1>Test</h1>
+
+  <h5>Ano:</h5>
+  <input type="number" id="Ano" value="" class="form-control" min="1900" max="2020"
+    placeholder="Digite os últimos dois números" required="required"><br>
+
+  <p>Valor do veículo</p>
+  <input type="text" class="form-control" id="Valor" value="" maxlength="30" aria-label="Quantia" placeholder="15.000"
+    required="required">
+  </div>
+  <!--Input-->
+  <button type="submit" class="btn btn-primary" onclick="javascript:Calcular()">Enviar</button><br>
+  <h5>Resultado</h5>
+  <input type="text" id="Resultado" value="" size="30"><br>
+
+  <p class="text-start">Sexo</p>
+  <input type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" checked>
+  <label class="form-check-label" for="exampleRadios1">Masculino </label>
+
+  <input type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+  <label class="form-check-label" for="exampleRadios2">
+    Feminino
+  </label>
+
+  <!--desconto-->
+  <input type="text" id="Desconto" value="" size="30" readonly><br>
+
+  <label class="control-label" for="date">Data de nascimento</label>
+  <input type="number" id="Nascimento" value="" class="form-control" min="1900" max="2020"
+    placeholder="Digite os últimos dois números" required="required"><br>
+    <input type="text" id="Idade" value="" readonly>
+
+
+</body>
+
+</html>
+
+<!--c) Se o segurado possuir menos de 30 anos ou mais de 60 anos, acrescentar 20% ao valor da apólice após os cálculos realizados no item a e no item b.-->

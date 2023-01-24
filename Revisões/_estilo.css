@@ -1,0 +1,24 @@
+﻿/*  HEAD    */
+
+#fundo {
+    background-color: #030A8C;
+    color: #F20505;
+}
+
+body .head {
+    text-align: center;
+
+}
+body section.listas{
+    text-align: left;
+
+}
+body section.listas a{
+    color: #F20505;
+}
+
+body section.tabela table{
+    background-color: #F2F2F2;
+    color: #030A8C;
+    
+}

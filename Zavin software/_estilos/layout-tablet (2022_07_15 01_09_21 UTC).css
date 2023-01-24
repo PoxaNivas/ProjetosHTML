@@ -1,0 +1,66 @@
+/*Tipografia*/
+section#Sobre-nos p.destaque, section#Projetos p.destaque, section#Depoimentos p.destaque
+{
+    width: 100%;
+}
+
+/*Sobre nós*/
+section#Sobre-nos  div.pontos-chaves img
+{
+    display: none;
+}
+
+section#Sobre-nos div.Sobre-nos-Centro {
+    width: 95%;
+}
+
+body section div#pontos-chaves-mestre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Projetos*/
+body section div#produtos-mestre
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body section div.produto-vazio
+{
+    display: flex;
+}
+
+
+
+/*Depoimentos*/
+
+
+body section#Depoimentos div#testemunha-centro 
+{
+    width: 350px;
+}
+
+
+section#Depoimentos div#testemunha-esquerda, div#testemunha-direita
+{
+    display: none;
+}
+
+div#Transicao-testemunha-plano div#decoracao1, div#decoracao3
+{
+    display: none;
+}
+
+/*Planos*/
+body section#Plano-principal div#Planos-janela
+{
+    width: 100%;
+}
+
+body section#Plano-principal div#Planos-janela div.Planos
+{
+    margin: 80px;
+}

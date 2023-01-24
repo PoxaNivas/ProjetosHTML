@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="_estilob.css">
+    <script type="text/javascript">
+        function somar() {
+            resposta.value = parseInt(primeiro.value) + parseInt(segundo.value);
+        }
+        function subtrair() {
+            resposta.value = (primeiro.value) - (segundo.value);
+        }
+        function dividir() {
+            if (parseInt(segundo.value) === 0)
+                resposta.value = "Erro! O divisor não pode ser zero";
+            else
+                resposta.value = (primeiro.value) / (segundo.value);
+        }
+        function multiplicar() {
+
+            resposta.value = (primeiro.value) * (segundo.value);
+
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="Calculadora">
+        <h1>Calculadora simples</h1>
+        <div class="numeros">
+            <input id="primeiro" type="text" placeholder="Digite o primeiro número">
+            <input id="segundo" type="text" placeholder="Digite o primeiro número">
+            <input type="text" id="resposta" placeholder="Resposta" readonly>
+        </div>
+        <div class="funcoes">
+            <input id="somar" type="button" value="somar" onclick="javascript:somar()">
+            <input id="subtrair" type="button" value="subtrair" onclick="javascript:subtrair()">
+            <input id="dividir" type="button" value="dividir" onclick="javascript:dividir()">
+            <input id="multiplicar" type="button" value="multiplicar" onclick="javascript:multiplicar()"><br>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

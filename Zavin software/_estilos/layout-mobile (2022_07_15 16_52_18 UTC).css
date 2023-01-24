@@ -1,0 +1,225 @@
+/*Tipografia*/
+body header div.chamada h1{
+    margin-top: 200px;
+    font-size: 450%;
+    justify-content: center;
+}
+
+body header div.chamada h4{
+    font-size: 150%;
+    justify-content: center;
+}
+
+body header div.chamada a{
+    font-size: 80%;
+    justify-content: center;
+
+}
+
+
+h2{
+    font-size: 180%;
+}
+
+
+
+
+/*Nav */
+nav ul
+{
+    display: none;
+}
+
+nav ul#icone-menu-mobile
+{
+    display:inline ;
+    margin-right: 60px;
+
+}
+
+
+/*
+_________________________________________
+|                                       |
+|                                       |
+|               /espaço/                |
+|                                       |
+|                                       |
+|_______________________________________|
+*/
+/*Header */
+header div.chamada a
+{
+    padding: 15px 30px;
+}
+/*
+_________________________________________
+|                                       |
+|                                       |
+|               /espaço/                |
+|                                       |
+|                                       |
+|_______________________________________|
+*/
+
+
+/*Sobre nós */
+
+body section#Sobre-nos p.destaque
+{
+    width: 100%;
+    font-size: 80%;
+
+}
+body section#Sobre-nos p
+{
+    width: 100%;
+    font-size: 80%;
+
+}
+body section div#pontos-chaves-mestre
+{
+    flex-direction: column;
+    align-items: center;
+
+}
+
+body section div.pontos-chaves
+{
+    width:95%;
+
+}
+      
+/*
+_________________________________________
+|                                       |
+|                                       |
+|               /espaço/                |
+|                                       |
+|                                       |
+|_______________________________________|
+*/
+
+
+/*Projetos */
+body section#Projetos p.destaque
+{
+    width: 95%;
+    font-size: 80%;
+
+}
+
+body section#Projetos h4
+{
+    font-size: 120%;
+}
+
+body section#Projetos li
+{
+    font-size: 80%;
+}
+
+/*
+_________________________________________
+|                                       |
+|                                       |
+|               /espaço/                |
+|                                       |
+|                                       |
+|_______________________________________|
+*/
+
+/*Depoimentos */
+
+body section#Depoimentos p.destaque
+{
+    width: 85%;
+    font-size: 80%;
+}
+
+body section#Depoimentos div#Testemunha-Mestre
+{
+    width: 330px;
+    height: 990px;
+
+}
+body section#Depoimentos div#testemunha-centro div#testemunhos ul
+{
+    display: block;
+    height: 300px;
+    margin-top: 30px;
+
+}
+
+
+/*
+_________________________________________
+|                                       |
+|                                       |
+|               /espaço/                |
+|                                       |
+|                                       |
+|_______________________________________|
+*/
+
+
+/*Planos */
+
+body section#Plano-principal
+{
+    height: inherit;
+    width: 100%;
+
+}
+body section#Plano-principal div#Planos-janela
+{
+    flex-direction: column;
+    flex-wrap: nowrap ;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+body section#Plano-principal div#Planos-janela div.Planos
+{
+    width: 250px;
+    height: 450px;
+    margin: 70px 30px;
+}
+
+body section#Plano-principal div#Planos-janela div.Planos div.planos-top
+{
+    width: 250px;
+    height: 400px;
+}
+
+body section#Plano-principal div#Planos-janela div.Planos div.planos-bottom
+{
+    width: 250px;
+}
+
+
+/*
+_________________________________________
+|                                       |
+|                                       |
+|               /espaço/                |
+|                                       |
+|                                       |
+|_______________________________________|
+*/
+/*Rodapé */
+body footer div#mapa
+{
+    display: none;
+}
+
+body footer div#infos 
+{
+    
+    margin-top: 20px;
+    width: 90%;
+    height: 390px;
+   
+}

@@ -1,0 +1,527 @@
+/*div#teste
+{
+    position: fixed;
+    background-color: rgb(33, 96, 151);
+    z-index: 10;
+    height: 50px;  width: 200px;
+}*/
+/*Cores escuras
+ Color Theme Swatches in Hex 
+{ color: #260120; }
+{ color: #40013C; }
+{ color: #580259; }
+{ color: #7C038C; }
+{ color: #0D0D0D; }
+
+Cores claras
+#593B59
+#8C728C
+
+*/
+*{
+    margin:0 ;padding: 0;box-sizing: border-box;
+    color: white;
+}
+
+div#logo 
+    {
+        float: left;
+        background-image: url(../Zavin\ Software.png);
+        background-size: contain;
+        width: 70px;
+        height: 70px;
+        margin: 10px;
+        background-repeat: no-repeat;
+    }
+
+body
+{
+    background:linear-gradient(#40013C
+    40%, #260120 60%);
+    border-top:2px solid #593B59 ;
+}
+
+nav 
+{
+    width:100%;
+    height: 80px;
+    background-color: #260120;
+    clip-path: polygon(0 0, 100% 0,100% 90%,0 100% );
+    position: fixed; top:0; left: 2,5%; z-index:9999;
+    cursor: pointer;
+
+}
+nav ul
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+    height: 40px;
+}
+nav ul.esquerda
+{
+    float: left;
+   
+}
+nav ul#icone-menu-mobile
+{
+    float: right;
+    display: none;
+
+}
+nav ul li
+{
+    list-style: none;
+}
+
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    justify-content: space-around;
+    padding: 18px;
+    border-radius: 100px;
+}
+
+
+nav ul li a:hover 
+{
+    Background-color:#593B59;
+    transition-duration: 0.6s;   
+}
+
+
+header .chamada
+{
+    position:relative;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    margin-top: 12%;
+    margin-bottom: 10%;
+}
+
+section{
+   padding: 55px 0 80px; 
+}
+
+/*--------------------------------*/
+/*          Seção - Sobre nós     */
+/*--------------------------------*/
+
+body section#Sobre-nos
+{
+    width: 100%;
+    background-color:#260120 ;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+
+}
+body section .Sobre-nos-Esquerdo, .Sobre-nos-Direito
+{   
+    width: 10%;
+    position:relative;
+    background-color:#260120 ;
+}
+
+
+body section .Sobre-nos-Centro
+{
+    width:70%;
+    background-color:#260120;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+
+body section div#pontos-chaves-mestre
+{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+body section div.pontos-chaves
+{
+    width: 25%;
+
+}
+
+.Transicao-nos{
+    animation-name: swirl-in-fwd;
+    animation-duration: 2s;
+}
+/*--------------------------------*/
+/*          Seção - Projetos     */
+/*--------------------------------*/
+
+body section#Projetos
+{
+    
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url(../Imagens/Web.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+body section div#produtos-mestre
+{
+    width: 70%;
+    margin-top:40px;
+    display:flex;
+    flex-flow:row wrap;
+    margin-bottom: 15px;
+}
+body section div#produtos-mestre h4{
+    margin-bottom: 20px;
+}
+
+body section div.produtos
+{
+    width: 40%;
+    text-align: center;
+
+}
+body section div.produto-vazio
+{
+    width: 10%;
+}
+body section div ul li.no-lista{
+    list-style: none;
+}
+
+
+body section div ul li.lista 
+{
+    text-align: start;
+    list-style: circle;
+    border-collapse: initial;
+    margin-top: -35px;
+}
+body section div h3
+{
+    margin-bottom: 50px;
+}
+
+
+.rotate-scale-up {
+	animation: rotate-scale-up 0.65s linear both;
+}
+
+/*--------------------------------*/
+/*          Seção - Testemunhas   */
+/*--------------------------------*/
+
+
+
+
+
+body section#Depoimentos 
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+    
+}
+body section div#Testemunha-Mestre
+{
+    width: 100%;
+    height: 350px;
+    margin-top:50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+   
+   
+   
+}
+
+body section#Depoimentos div#testemunha-esquerda, div#testemunha-direita
+{
+    width: 15%;
+    height: 300px;
+    cursor: pointer;
+}
+
+body section#Depoimentos div#Testemunha-Mestre img.seta
+{
+    position: relative;
+    width: 100px;
+    top:100px;
+    left:-150px;
+   
+   
+}
+
+body section#Depoimentos div#testemunha-esquerda img.seta
+{
+    opacity: 0.3;
+    position: relative;
+    left: 150px;
+    top: 100px;
+}
+
+
+body section#Depoimentos div#testemunha-centro
+{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1010px;
+    overflow: hidden;
+  
+
+}
+body section#Depoimentos div#testemunha-centro div#testemunhos
+{
+    position: absolute;
+    left: 0;
+    width: 2016px;
+
+}
+
+body section#Depoimentos div#testemunha-centro div#testemunhos ul
+{
+    display: inline-table;
+    width: 300px;
+    height: 100px;
+    background: #593B59;
+    padding: 20px;
+    margin: 10px 15px;
+    border-radius: 50px;
+    border:1px solid  rgba(255, 255, 255, 0.507);
+
+}
+
+body section#Depoimentos div#testemunha-centro div#testemunhos ul li
+{
+    list-style: none;
+    display: inline-table;
+    width: 80%;
+    margin: 0;
+    text-align: center;
+
+}
+
+body section#Depoimentos div#testemunha-centro div#testemunhos ul img
+{
+    width: 40%;
+    border-radius: 100%;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    border: 5px solid rgba(255, 255, 255, 0.507);
+}
+
+body section#Depoimentos div#testemunha-centro div#testemunhos ul h5
+{
+    font-size: 25px;
+}
+
+body section#Depoimentos div#testemunha-centro div#testemunhos ul p
+{
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 10px;
+    height: 70px;
+}
+
+.Transicao-Depoimentos
+{
+    animation-name: slide-top ;
+    animation-duration: 2s;
+}
+
+
+/*--------------------------------*/
+/*          Seção - Transição 1   */
+/*--------------------------------*/
+body div#Transicao-testemunha-plano{
+    width: 100%; 
+    height: 260px;
+    display:flex; 
+    flex-flow:row wrap;
+    justify-content: space-between;
+    background: linear-gradient(#260120 20%, #40013C 80%);
+    margin-top: 0px;
+ 
+}
+
+body div#decoracao1{
+    width: 30%;
+    height: 100%;
+    background-image: url(../Imagens/sheep-right.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 20%;
+    }
+
+
+body div#decoracao3{
+    width: 30%;
+    height: 100%;
+    background-image: url(../Imagens/sheep.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 20%;
+ 
+}
+
+div.Transicao-plano{
+    animation-name: slide-top ;
+    animation-duration: 1.5s;
+}
+
+/*--------------------------------*/
+/*          Seção - Planos   */
+/*--------------------------------*/
+
+
+body section#Plano-principal
+{
+    width: 100%; height: 100%;
+    background-color: #40013C;
+   
+}
+
+body section#Plano-principal div#Planos-janela
+{
+    width: 90%;
+    margin: 30px auto;
+   
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+body section#Plano-principal div#Planos-janela div.Planos
+{
+    width: 28%;
+    height: 100%;
+    margin: 80px 10px;
+    
+
+
+}
+
+body section#Plano-principal div#Planos-janela div.Planos div.planos-top
+{
+    width: 250px;
+    height: 450px;
+    background: #b496b4;
+   
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 3px ;
+
+}
+
+
+
+body section#Plano-principal div#Planos-janela div.Planos div.planos-bottom
+{
+    width: 250px;
+    height: 100px;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+    background: #593B59;
+    box-shadow: 2px 2px 3px ;
+    cursor: pointer ;
+   
+ 
+}
+
+
+/*--------------------------------*/
+/*          Seção - Footer        */
+/*--------------------------------*/
+body footer
+{
+    width: 100%;height: 500px;
+    background-color: #260120; 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-bottom: 5px solid #593B59;
+}
+
+body footer div#mapa
+{
+    width: 30%;height: 380px;
+    margin-top: 40px; margin-left: 40px;
+    box-shadow: 0 3px 10px #b496b4;
+}
+
+body footer div#infos 
+{
+    
+    margin-top: 20px;
+    width: 30%;
+    height: 390px;
+   
+   
+   
+}
+body footer div#redes-sociais 
+{
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+ 
+}
+
+body footer div#infos img
+{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+body footer div#infos img:hover 
+{
+    Background-color:#593B59;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+body footer div#logo-rodape 
+{
+    width: 200px;
+    height: 290px;
+    margin-top: 50px;
+    background-image: url(../Imagens/back-logo-zavin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

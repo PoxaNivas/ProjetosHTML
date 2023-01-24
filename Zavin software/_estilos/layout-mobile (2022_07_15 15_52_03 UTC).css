@@ -1,0 +1,159 @@
+/*Tipografia*/
+body header div.chamada h1{
+    margin-top: 200px;
+    font-size: 450%;
+    justify-content: center;
+}
+
+body header div.chamada h4{
+    font-size: 150%;
+    justify-content: center;
+}
+
+body header div.chamada a{
+    font-size: 80%;
+    justify-content: center;
+
+}
+
+
+h2{
+    font-size: 180%;
+}
+
+
+/*Header */
+header div.chamada a
+{
+    padding: 15px 30px;
+}
+/*
+_________________________________________
+|                                       |
+|                                       |
+|               /espaço/                |
+|                                       |
+|                                       |
+|_______________________________________|
+*/
+
+
+/*Sobre nós */
+
+body section#Sobre-nos p.destaque
+{
+    width: 100%;
+    font-size: 80%;
+
+}
+body section#Sobre-nos p
+{
+    width: 100%;
+    font-size: 80%;
+
+}
+body section div#pontos-chaves-mestre
+{
+    flex-direction: column;
+    align-items: center;
+
+}
+
+body section div.pontos-chaves
+{
+    width:95%;
+
+}
+      
+/*
+_________________________________________
+|                                       |
+|                                       |
+|               /espaço/                |
+|                                       |
+|                                       |
+|_______________________________________|
+*/
+
+
+/*Projetos */
+body section#Projetos p.destaque
+{
+    width: 95%;
+    font-size: 80%;
+
+}
+
+body section#Projetos h4
+{
+    font-size: 120%;
+}
+
+body section#Projetos li
+{
+    font-size: 80%;
+}
+
+
+/*Depoimentos */
+
+
+body section#Depoimentos div#testemunha-centro div#testemunhos ul 
+{
+    height: 200px;
+}
+body section#Depoimentos div#Testemunha-Mestre
+{
+    width: 330px;
+    height: 340px;
+    
+}
+
+
+body section#Depoimentos div#Testemunha-Mestre img.seta
+{
+    position: relative;
+    width: 100px;
+    top:100px;
+   
+   
+}
+
+body section#Depoimentos  div#testemunha-direita
+{
+    display: flex;
+    width: 50px;
+    height: 60px;
+    left: 80px;
+    position: absolute;
+    left: 570px;
+
+}
+
+body section#Depoimentos div#testemunha-esquerda
+{
+    opacity: 0.3;
+    display: flex;
+    position: absolute;
+    left: -130px;
+    width: 50px;
+    height: 60px;
+
+}
+
+
+
+/*Planos */
+
+
+
+
+body section#Plano-principal
+{
+    display: none;
+}
+
+
+
+
+/*Rodapé */

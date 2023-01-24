@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="_estilotrab.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body onload="iniciar()">
+    <h1>Mercadinho da esquina</h1>
+    <h3 id="boas">Boas vindas!</h3>
+    <p>Te ajudaremos a calcular as suas compras para que não tenha nenhum desconforto</p>
+    <script>
+        function iniciar() {
+            nome = prompt("Oii, qual o seu nome?");
+            boas.innerHTML = "Que bom que você veio a nossa loja, " + nome;
+        }
+    </script>
+    <table border="2" cellspacing="2" cellpadding="2">
+        <tr>
+            <td>Calculo de produto</td>
+
+
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="prec" placeholder="Digite o preço">
+            </td>
+
+
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="quant" placeholder="Digite a quantidade">
+            </td>
+
+
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="desc" placeholder="Digite o valor do desconto">
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <div class="botao">
+                    <input type="button" id="calc1" value="    Clique aqui para calular  ">
+            </td>
+
+            </div>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="resul1" value=" " readonly>
+            </td>
+
+        </tr>
+
+    </table>
+
+    <script>
+             $('#calc1').on('click',validarDescricao)
+     
+        function Calcular(){
+            var resultado= (parseFloat(prec.value)*parseFloat(quant.value))-parseFloat(desc.value)
+            resul1.value= resultado.toFixed(2)
+            $('table').css('color','green')
+            $('table').css('font-weight','600')
+            $('#resul1').css('background-color','green')
+        }
+       
+        function validarDescricao() {
+            if (desc.value.trim() === "" || quant.value.trim() === "" || prec.value.trim() === "") {
+                desc.style.background = "yellow";
+                quant.style.background = "yellow";
+                prec.style.background = "yellow";
+            }
+            else {
+                desc.style.background = "white";
+                quant.style.background = "white";
+                prec.style.background = "white";
+                Calcular();
+
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
